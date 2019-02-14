@@ -14,6 +14,8 @@ def main():
     html = BeautifulSoup(html, "html.parser")
     new_html = html.article
     
+    print(html.title.get_text() +'\n')
+    
     # Desc, input and output
     i = 0
     for p in new_html.select("p"):
